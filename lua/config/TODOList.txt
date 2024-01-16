@@ -1,0 +1,1 @@
+TODO: comment the whole code | add descriptions to keybinds | customize some parts of the ui | lazyload more plugins | add LSPs, linters and formatters | finish up my keybinds

@@ -1,3 +1,3 @@
-require("config.set")
+require("config.core.set")
 require("config.lazy")
-require("config.mappings")
+require("config.core.mappings")
