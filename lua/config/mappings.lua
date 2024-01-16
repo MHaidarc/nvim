@@ -1,7 +1,11 @@
 -- general remaps
 
-vim.keymap.set("n", "<leader>fl", vim.cmd.Ex)
 vim.keymap.set("n", "ç", ":")
+vim.keymap.set("n", "Ç", ":")
+vim.keymap.set("n", ";", ":")
+
+
+
 
 -- telescope.nvim remaps
 
@@ -21,3 +25,11 @@ vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
 -- vim-fugitive remaps
 
 vim.keymap.set("n", "<leader>gs", vim.cmd.Git);
+
+-- nvim-tree remaps
+
+vim.keymap.set("n", "<C-n>", vim.cmd.NvimTreeToggle)
+
+-- ZenMode remaps
+
+vim.keymap.set("n", "<leader>zm", vim.cmd.ZenMode)
