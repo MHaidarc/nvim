@@ -43,6 +43,7 @@ return {
 				nvimtree = true,
 				treesitter = true,
 				mason = true,
+				alpha = true,
 				dap = true,
 				dap_ui = true,
 				native_lsp = {
