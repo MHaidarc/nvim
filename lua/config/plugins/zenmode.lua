@@ -1,5 +1,6 @@
 return -- Lua
 {
+	event = "VeryLazy",
 	"folke/zen-mode.nvim",
 	opts = {
 		-- your configuration comes here
