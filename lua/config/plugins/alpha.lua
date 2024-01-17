@@ -19,7 +19,7 @@ return {
 			[[                                                                       ]],
 		}
 		dashboard.section.buttons.val = {
-			dashboard.button("e", "  -> Novo Arquivo", "<cmd>ene<CR>"),
+			dashboard.button("n", "  -> Novo Arquivo", "<cmd>ene<CR>"),
 			dashboard.button("<C-n>", "  -> Explorador de Arquivos", "<cmd>NvimTreeToggle<CR>"),
 			dashboard.button("SPC ff", "󰱼 -> Encontrar Arquivo", "<cmd>Telescope find_files<CR>"),
 			dashboard.button("SPC fg", "  -> Encontrar Palavra", "<cmd>Telescope live_grep<CR>"),

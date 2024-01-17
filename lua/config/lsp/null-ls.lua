@@ -6,17 +6,9 @@ return {
 		"jay-babu/mason-null-ls.nvim",
 	},
 	config = function()
-		local mason_null_ls = require("mason-null-ls")
-
 		local null_ls = require("null-ls")
 
 		local null_ls_utils = require("null-ls.utils")
-
-		mason_null_ls.setup({
-			ensure_installed = {
-				"stylua", -- lua formatter
-			},
-		})
 
 		-- for conciseness
 		local formatting = null_ls.builtins.formatting -- to setup formatters
@@ -33,7 +25,12 @@ return {
 			sources = {
 				--  to disable file types use
 				--  "formatting.prettier.with({disabled_filetypes: {}})" (see null-ls docs)
+
+				formatting.clang_format,
 				formatting.stylua, -- lua formatter
+				diagnostics.mypy,
+				diagnostics.ruff,
+				formatting.black,
 			},
 			-- configure format on save
 			on_attach = function(current_client, bufnr)

@@ -42,3 +42,17 @@ keymap.set("n", "<leader>tx", "<cmd>tabclose<CR>", { desc = "Close current tab" 
 keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to next tab" }) --  go to next tab
 keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" }) --  go to previous tab
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" }) --  move current buffer to new tab
+
+-- nvim-dap remaps
+
+keymap.set("n", "<leader>db", vim.cmd.DapToggleBreakpoint, { desc = "Add breakpoint to a line" })
+keymap.set("n", "<leader>dr", vim.cmd.DapContinue, { desc = "Start or continue the debugger" })
+keymap.set("n", "<leader>dpr", function()
+	require("dap-python").test_method()
+end, { desc = "Start or continue the python debugger" })
+
+-- crates.nvim remaps
+
+keymap.set("n", "<leader>rcu", function()
+	require("crates").upgrade_all_crates()
+end, { desc = "update crates" })

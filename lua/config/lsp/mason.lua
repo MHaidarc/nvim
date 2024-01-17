@@ -25,6 +25,8 @@ return {
 			ensure_installed = {
 				"clangd",
 				"lua_ls",
+				"rust_analyzer",
+				"pyright",
 			},
 			automatic_installation = true,
 		})
@@ -32,6 +34,10 @@ return {
 			ensure_installed = {
 				"stylua",
 				"clang_format",
+				"mypy",
+				"ruff",
+				"black",
+				"debugpy",
 			},
 		})
 	end,
