@@ -1,10 +1,22 @@
 return {
 	"nvim-treesitter/nvim-treesitter",
 	event = { "BufReadPre", "BufNewFile" },
+	build = ":TSUpdate",
 	config = function()
-		vim.cmd("TSUpdate")
 		require("nvim-treesitter.configs").setup({
-			ensure_installed = { "c", "lua" },
+			ensure_installed = {
+				"c",
+				"lua",
+				"rust",
+				"javascript",
+				"typescript",
+				"bash",
+				"python",
+				"cpp",
+				"vim",
+				"html",
+				"css",
+			},
 			-- Install parsers synchronously (only applied to `ensure_installed`)
 			sync_install = false,
 

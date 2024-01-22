@@ -2,11 +2,11 @@
 
 local keymap = vim.keymap
 
-keymap.set("n", "ç", ":")
-keymap.set("n", "Ç", ":")
 keymap.set("n", ";", ":")
 keymap.set("n", "<leader>sp", vim.cmd.sp, { desc = "Split a window horizontally" })
 keymap.set("n", "<leader>sv", vim.cmd.vs, { desc = "Split a window vertically" })
+
+keymap.set("n", "U", "<C-r>", { noremap = true })
 
 -- telescope.nvim remaps
 
