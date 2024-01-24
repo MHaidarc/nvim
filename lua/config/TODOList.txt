@@ -1,1 +1,0 @@
-TODO: comment the whole code | customize some parts of the ui 

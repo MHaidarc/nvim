@@ -3,6 +3,9 @@
 local keymap = vim.keymap
 
 keymap.set("n", ";", ":")
+keymap.set("n", "ç", ":")
+keymap.set("n", "Ç", ":")
+
 keymap.set("n", "<leader>sp", vim.cmd.sp, { desc = "Split a window horizontally" })
 keymap.set("n", "<leader>sv", vim.cmd.vs, { desc = "Split a window vertically" })
 
@@ -31,18 +34,6 @@ keymap.set("n", "<leader>gs", vim.cmd.Git, { desc = "Show Git status" })
 
 keymap.set("n", "<C-n>", vim.cmd.NvimTreeToggle, { desc = "Toggle file explorer" })
 
--- ZenMode remaps
-
-keymap.set("n", "<leader>zm", vim.cmd.ZenMode, { desc = "Toggle Zen Mode" })
-
--- bufferline remaps
-
-keymap.set("n", "<leader>n", "<cmd>tabnew<CR>", { desc = "Open new tab" }) -- open new tab
-keymap.set("n", "<leader>x", "<cmd>tabclose<CR>", { desc = "Close current tab" }) -- close current tab
-keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to next tab" }) --  go to next tab
-keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" }) --  go to previous tab
-keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" }) --  move current buffer to new tab
-
 -- nvim-dap remaps
 
 keymap.set("n", "<leader>db", vim.cmd.DapToggleBreakpoint, { desc = "Add breakpoint to a line" })
@@ -56,3 +47,7 @@ end, { desc = "Start or continue the python debugger" })
 keymap.set("n", "<leader>rcu", function()
 	require("crates").upgrade_all_crates()
 end, { desc = "update crates" })
+
+-- themery remaps
+
+keymap.set("n", "<leader>th", vim.cmd.Themery, { desc = "Change Themes" })

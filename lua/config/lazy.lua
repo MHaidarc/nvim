@@ -15,9 +15,6 @@ require("lazy").setup({
 	{ import = "config.plugins" },
 	{ import = "config.lsp" },
 }, {
-	install = {
-		colorscheme = { "catppuccin" },
-	},
 	checker = {
 		enable = true,
 		notify = false,

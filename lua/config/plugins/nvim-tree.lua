@@ -13,10 +13,6 @@ return {
 		vim.opt.termguicolors = true
 
 		-- OR setup with some options
-		require("nvim-tree").setup({
-			renderer = {
-				group_empty = true,
-			},
-		})
+		require("nvim-tree").setup({})
 	end,
 }
