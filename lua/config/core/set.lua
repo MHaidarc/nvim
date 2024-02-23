@@ -20,3 +20,8 @@ vim.o.backspace = "indent,eol,start"
 vim.o.clipboard = "unnamedplus"
 vim.o.splitright = true
 vim.o.splitbelow = true
+
+vim.opt.swapfile = false
+vim.opt.backup = false
+vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
+vim.opt.undofile = true
