@@ -4,7 +4,6 @@ local keymap = vim.keymap
 
 keymap.set("n", "<C-n>", vim.cmd.Explore, { desc = "show file explorer" })
 
-keymap.set("n", ";", ":")
 keymap.set("n", "ç", ":")
 keymap.set("n", "Ç", ":")
 

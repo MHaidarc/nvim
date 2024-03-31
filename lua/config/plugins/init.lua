@@ -46,4 +46,11 @@ return {
 			cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done())
 		end,
 	},
+	{
+		"NvChad/nvim-colorizer.lua",
+		event = { "BufReadPre", "BufNewFile" },
+    config = function ()
+      require("colorizer").setup()
+    end
+	},
 }
